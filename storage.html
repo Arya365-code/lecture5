@@ -8,7 +8,7 @@
                 localStorage.setItem('counter', 0);
             
             //Load current value of counter
-            document.addEvenListener('DOMContentLoaded', () => {
+            document.addEventListener('DOMContentLoaded', () => {
                 document.querySelector('#counter').innerHTML = localSotrage.getItem('counter')
                 
                 //Count every time button is clicked
