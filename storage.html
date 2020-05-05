@@ -9,7 +9,7 @@
             
             //Load current value of counter
             document.addEventListener('DOMContentLoaded', () => {
-                document.querySelector('#counter').innerHTML = localSotrage.getItem('counter')
+                document.querySelector('#counter').innerHTML = localStorage.getItem('counter')
                 
                 //Count every time button is clicked
                 document.querySelector('button').onclick = () => {
