@@ -16,4 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
     //When a new vote is announced, add to the unordered list
-    
+    socket.on('announce vote', data => {
+        const li = document.createElement('li');
+        li.innerHTML = `Vote recorded: ${data.selection}`;
+        document.querySelector('#votes').append(li);
+    });
+});
