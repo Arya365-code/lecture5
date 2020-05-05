@@ -18,4 +18,4 @@ def index():
 def vote(data):
     selection = data["selection"]
     votes[selection]+=1
-    emit("announce vote", {"selection": selection}, broadcast=True)
+    emit("vote totals", votes, broadcast=True)
