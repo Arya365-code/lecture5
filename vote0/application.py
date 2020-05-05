@@ -15,5 +15,4 @@ def index():
 @scoketio.on("submit vote")
 def vote(data):
     selection = data["selection"]
-    emit("announce vote", {"selection": selection})
-    
+    emit("announce vote", {"selection": selection}, broadcast=True)
